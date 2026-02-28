@@ -16,6 +16,6 @@ Durante el desarrollo de esta actividad se trabajaron estructuras esenciales de 
 
 Lo anterior permitió fortalecer la capacidad de análisis, diseño e implementación de soluciones computacionales, integrando la lógica de programación con una aplicación práctica basada en un juego tradicional.
 
-[SENTENCIAS CONDICIONALES.PY](SENTENCIAS CONDICIONALES.PY)
+[SENTENCIAS CONDICIONALES.PY(SENTENCIAS CONDICIONALES.PY)
 
 [FUNCIONES.PY](FUNCIONES.PY)
