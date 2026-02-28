@@ -18,5 +18,7 @@ Lo anterior permitió fortalecer la capacidad de análisis, diseño e implementa
 
 
 [SENTENCIAS_CONDICIONALES.PY](SENTENCIAS_CONDICIONALES.PY)
+
 [CICLOS_Y_ARREGLOS](CICLOS_Y_ARRELOS)
+
 [FUNCIONES.PY](FUNCIONES.PY)
