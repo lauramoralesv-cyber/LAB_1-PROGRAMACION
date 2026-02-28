@@ -46,3 +46,4 @@ print(f"Total: {Lanzamientos}" )
 print(f"Porcentaje de presadas: {porcentaje_presadas:.2f}%")
 print(f"Porcentaje de 5-6: {porcentaje_5_6:.2f}%")
 print(f"Porcentaje de pate-perro: {porcentaje_pate_perro:.2f}%")
+
