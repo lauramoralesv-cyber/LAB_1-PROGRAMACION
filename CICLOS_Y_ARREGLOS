@@ -1,0 +1,48 @@
+import random
+
+nombre_usuario1 = input("Ingresa nombre del jugador 1: ")
+cantidad_de_lanzamientos = int(input("Ingresa el número de lanzamientos: "))
+
+def lanzar_dados():
+    dado1 = random.randint(1, 6)
+    dado2 = random.randint(1, 6)
+    return dado1, dado2
+
+# Arreglo (lista): almacena todos los resultados de los lanzamientos
+
+Lanzamientos = []
+
+contador_presadas = 0
+contador_5_6 = 0
+contador_pate_perro = 0
+# Ciclo for: se repite según la cantidad de lanzamientos ingresada
+for i in range(cantidad_de_lanzamientos):
+    d1, d2 = lanzar_dados()
+# Se guardan los valores en el arreglo como una tupla
+    Lanzamientos.append((d1, d2))
+    
+    suma = d1 + d2
+    
+    
+    if d1 == d2:
+        contador_presadas += 1
+     # Condición corregida para validar 5 y 6 en cualquier orden   
+    if suma == 11: 
+        contador_5_6 += 1
+        
+    if suma == 3:   
+        contador_pate_perro += 1
+
+# Cálculo de porcentajes
+if cantidad_de_lanzamientos > 0:
+    porcentaje_presadas = (contador_presadas / cantidad_de_lanzamientos) * 100
+    porcentaje_5_6 = (contador_5_6 / cantidad_de_lanzamientos) * 100
+    porcentaje_pate_perro = (contador_pate_perro / cantidad_de_lanzamientos) * 100
+else:
+    porcentaje_presadas = porcentaje_5_6 = porcentaje_pate_perro = 0
+
+print(f"\nResultados finales para {nombre_usuario1}:")
+print(f"Total: {Lanzamientos}" )
+print(f"Porcentaje de presadas: {porcentaje_presadas:.2f}%")
+print(f"Porcentaje de 5-6: {porcentaje_5_6:.2f}%")
+print(f"Porcentaje de pate-perro: {porcentaje_pate_perro:.2f}%")
